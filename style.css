@@ -53,8 +53,8 @@ li {
 }
 
 li a {
-	margin-left: 2%;
-	margin-right: 2%;
+	margin-left: 1%;
+	margin-right: 1%;
 	font-size: 2em;
 	transition-duration: 0.2s;
 	color: var(--accent-color);
@@ -64,7 +64,41 @@ li a {
 li a:hover {
 	transition-duration: 0.2s;
 	color: var(--header-color);
-	font-size: 2.5em;
-	margin-left: 1%;
-	margin-right: 1%;
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+}
+
+#controller {
+	font-size: 8em;
+	color: var(--header-color);
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+}
+
+#controller:hover {
+	transition-duration: 0.2s;
+	transform: rotate(-15deg);
+	transition-timing-function: ease-in-out;
+	font-size: 10em;
+	color: var(--accent-color);
+}
+
+#monitor {
+	font-size: 16em;
+	color: var(--header-color);
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+	padding-left: 5%;
+}
+
+#monitor:hover {
+	font-size: 20em;
+	color: var(--accent-color);
+	transform: rotate(-15deg);
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+}
+
+#icons {
+	display: inline;
 }
