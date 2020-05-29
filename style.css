@@ -1,0 +1,70 @@
+:root {
+	--main-bg-color: #0e0831;
+	--header-color: #FF4949;
+	--accent-color: #62F2F7;
+	--text-color: #F1F2EE;
+}
+
+body {
+	background-color: var(--main-bg-color);
+	color: var(--text-color);
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	color: var(--header-color);
+	font-size: 8em;
+}
+
+#appLink {
+	background-color: var(--header-color);
+	color: var(--text-color);
+	font-size: 2em;
+	margin: 15px;
+	padding: 10px;
+	border-radius: 10px;
+	border: 0px;
+	transition-duration: 0.2s;
+}
+
+#appLink:hover {
+	transition-duration: 0.2s;
+	background-color: var(--accent-color);
+	color: var(--main-bg-color);
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+#appLink:active {
+	background-color: var(--text-color);
+	transition-duration: 0.1s;
+	cursor: pointer;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline;
+}
+
+li a {
+	margin-left: 2%;
+	margin-right: 2%;
+	font-size: 2em;
+	transition-duration: 0.2s;
+	color: var(--accent-color);
+	text-decoration: none;
+}
+
+li a:hover {
+	transition-duration: 0.2s;
+	color: var(--header-color);
+	font-size: 2.5em;
+	margin-left: 1%;
+	margin-right: 1%;
+}
