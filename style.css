@@ -17,7 +17,7 @@ h1 {
 	font-size: 8em;
 }
 
-#appLink {
+#appLink, #submitButton {
 	background-color: var(--header-color);
 	color: var(--text-color);
 	font-size: 3em;
@@ -29,7 +29,7 @@ h1 {
 	box-shadow: var(--accent-color);
 }
 
-#appLink:hover {
+#appLink:hover, #submitButton:hover {
 	transition-duration: 0.2s;
 	background-color: var(--accent-color);
 	color: var(--main-bg-color);
@@ -37,7 +37,7 @@ h1 {
 	cursor: pointer;
 }
 
-#appLink:active {
+#appLink:active, #submitButton:active {
 	background-color: var(--text-color);
 	transition-duration: 0.1s;
 	cursor: pointer;
@@ -126,4 +126,37 @@ p {
 
 h2 {
 	margin-top: 30px;
+}
+
+input[type=text], select, textarea {
+	width: 30%; /* Full width */
+	padding: 12px; /* Some padding */ 
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+	font-family: 'Roboto', sans-serif;
+  }
+
+label {
+	font-size: 1.5em;
+}
+
+textarea {
+	vertical-align: top;
+}
+
+#submitText {
+	display: none;
+	transition-duration: 0.2s;
+}
+
+#buttonDiv {
+
+}
+
+#buttonDiv:hover #submitText {
+	transition-duration: 0.2s;
 }
