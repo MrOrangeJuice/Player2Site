@@ -20,12 +20,13 @@ h1 {
 #appLink {
 	background-color: var(--header-color);
 	color: var(--text-color);
-	font-size: 2em;
+	font-size: 3em;
 	margin: 15px;
 	padding: 10px;
 	border-radius: 10px;
 	border: 0px;
 	transition-duration: 0.2s;
+	box-shadow: var(--accent-color);
 }
 
 #appLink:hover {
@@ -68,37 +69,61 @@ li a:hover {
 	margin-right: 0.5%;
 }
 
-#controller {
+#monitor {
+	font-size: 16em;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+#phone {
+	font-size: 4em;
+}
+
+#phone:hover {
+	transform: rotate(15deg);
+}
+
+#tablet {
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+#tablet:hover {
+	transform: rotate(15deg);
+}
+
+#laptop {
+	font-size: 12em;
+}
+
+#laptop:hover {
+	transform: rotate(15deg);
+}
+
+
+.hoverGraphic {
 	font-size: 8em;
 	color: var(--header-color);
 	transition-duration: 0.2s;
 	transition-timing-function: ease-in-out;
 }
 
-#controller:hover {
+.hoverGraphic:hover {
 	transition-duration: 0.2s;
 	transform: rotate(-15deg);
 	transition-timing-function: ease-in-out;
-	font-size: 10em;
 	color: var(--accent-color);
 }
 
-#monitor {
-	font-size: 16em;
-	color: var(--header-color);
-	transition-duration: 0.2s;
-	transition-timing-function: ease-in-out;
-	padding-left: 5%;
-}
-
-#monitor:hover {
-	font-size: 20em;
-	color: var(--accent-color);
-	transform: rotate(-15deg);
-	transition-duration: 0.2s;
-	transition-timing-function: ease-in-out;
-}
-
-#icons {
+.icons {
 	display: inline;
+}
+
+p {
+	margin-left: 40%;
+	margin-right: 40%;
+}
+
+h2 {
+	margin-top: 30px;
 }
