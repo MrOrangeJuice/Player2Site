@@ -153,10 +153,6 @@ textarea {
 	transition-duration: 0.2s;
 }
 
-#buttonDiv {
-
-}
-
 #buttonDiv:hover #submitText {
 	transition-duration: 0.2s;
 }
