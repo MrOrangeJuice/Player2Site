@@ -1,8 +1,16 @@
 :root {
-	--main-bg-color: #0e0831;
-	--header-color: #FF4949;
-	--accent-color: #62F2F7;
-	--text-color: #F1F2EE;
+	--main-bg-color: #062538;
+	--header-color: #EDFCFF;
+	--accent-color: #d63d27;
+	--altaccent-color: #419fc9;
+	--text-color: #f6f0cd;
+	--secondarybg-color: #143852;
+}
+
+.page {
+	max-width: 1140px;
+	width: 100%;
+	margin: auto;
 }
 
 body {
@@ -18,7 +26,7 @@ h1 {
 }
 
 #appLink, #submitButton {
-	background-color: var(--header-color);
+	background-color: var(--altaccent-color);
 	color: var(--text-color);
 	font-size: 3em;
 	margin: 15px;
@@ -49,6 +57,17 @@ ul {
 	padding: 0;
 }
 
+a {
+	text-decoration: none;
+	color: var(--main-bg-color);
+	transition-duration: 0.2s;
+}
+
+a:hover {
+	color: var(--header-color);
+	transition-duration: 0.2s;
+}
+
 li {
 	display: inline;
 }
@@ -58,13 +77,13 @@ li a {
 	margin-right: 1%;
 	font-size: 2em;
 	transition-duration: 0.2s;
-	color: var(--accent-color);
+	color: var(--altaccent-color);
 	text-decoration: none;
 }
 
 li a:hover {
 	transition-duration: 0.2s;
-	color: var(--header-color);
+	color: var(--accent-color);
 	margin-left: 0.5%;
 	margin-right: 0.5%;
 }
@@ -120,25 +139,91 @@ li a:hover {
 }
 
 p {
-	margin-left: 40%;
-	margin-right: 40%;
+	padding: 2rem;
 }
 
 h2 {
 	margin-top: 30px;
 }
 
+.subtitle {
+	color: var(--header-color);
+}
+
+#postGallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	transition-duration: 0.2s;
+	overflow: hidden;
+	margin-bottom: 100px;
+}
+
+.post {
+	padding: 2rem;
+	margin: .5rem;
+	width: 30%;
+	overflow-x: hidden;
+	background-color: var(--altaccent-color);
+	border-radius: 10px;
+	transition-duration: 0.2s;
+	position: relative;
+	bottom: 0;
+	transition-duration: 0.2s;
+}
+
+.post:hover {
+	background-color: var(--accent-color);
+	padding: 2.2rem;
+	transition-duration: 0.2s;
+}
+
+.post > h2 {
+	font-size: 3rem;
+}
+
+.galleryImg {
+	width: 80%;
+}
+
+/* Form Styling */
+form{
+	max-width:1140px;
+	width:100%;
+	margin:auto;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+label {
+	color: var(--header-color);
+}
+
+form > div{
+	width: 40%;
+	display:flex;
+	flex-direction: column;
+	transition-duration: 0.2s;
+}
+
+form > div > label{
+	align-self:flex-start;
+}
+
 input[type=text], select, textarea {
-	width: 30%; /* Full width */
+	width: 100%; /* Full width */
 	padding: 12px; /* Some padding */ 
 	border: 1px solid #ccc; /* Gray border */
-	border-radius: 4px; /* Rounded borders */
+	/*border-radius: 4px; */ /* Rounded borders */
 	box-sizing: border-box; /* Make sure that padding and width stays in place */
 	margin-top: 6px; /* Add a top margin */
 	margin-bottom: 16px; /* Bottom margin */
 	resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 	font-family: 'Roboto', sans-serif;
-  }
+	text-align: left;
+	transition-duration: 0.2s;
+}
 
 label {
 	font-size: 1.5em;
@@ -155,4 +240,40 @@ textarea {
 
 #buttonDiv:hover #submitText {
 	transition-duration: 0.2s;
+}
+
+footer {
+	background-color: var(--secondarybg-color);
+	border-top: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/* Desktop Only */
+@media (min-width: 768px){
+	.page > div{
+		width:70%;
+		margin:auto;
+		overflow-x:hidden;
+	}
+}
+
+/* Mobile Only */
+@media (max-width: 767px) {
+	form > div{
+		width:calc(100% - 30px);
+		margin-left:15px;
+		margin-right:15px;
+	}
+
+	.post {
+		width: 80%;
+	}
 }

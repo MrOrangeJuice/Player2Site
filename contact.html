@@ -2,7 +2,7 @@
 <html lang = "en">
 <head>
 	<meta charset="utf-8">
-	<title>Player 2 App</title>
+	<title>Contact</title>
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="icon" type="image/png" href="media/favicon-32x32.png" sizes="32x32" />
@@ -10,30 +10,31 @@
 </head>
 
 <body>
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-		<hr>
-	</nav>
-	<h1>Contact</h1>
-	<form>
-		<label for="email">Email: </label>
-		<input type="text" id="email" name="emailaddress" placeholder="chunkylover53@aol.com">
-		<br>
-		<br>
-
-		<label for="message">Message: </label>
-		<textarea id="message" name="message" placeholder="Message Goes Here"></textarea>
-		<br>
-		<br>
-
-		<div id="buttonDiv">
-		<input type="submit" value="Submit" id="submitButton">
-		<p id="submitText">We'll get back to you shortly!</p>
-		</div>
-	</form>
+	<div class="page">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="howto.html">How to</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<hr>
+		</nav>
+		<main>
+			<h1>Contact</h1>
+			<form>
+				<div>
+					<label for="email">Email: </label>
+					<input type="text" id="email" name="emailaddress" placeholder="johndoe@gmail.com">
+					<label for="message">Message: </label>
+					<textarea id="message" name="message" placeholder="Message Goes Here"></textarea>
+					<div id="buttonDiv">
+						<input type="submit" value="Submit" id="submitButton">
+						<p id="submitText">We'll get back to you shortly!</p>
+					</div>
+				</div>
+			</form>
+		</main>
+	</div>
 </body>
 </html>
