@@ -2,7 +2,9 @@
 	--main-bg-color: #062538;
 	--header-color: #EDFCFF;
 	--accent-color: #d63d27;
+	--darkaccent-color: #b52d1f;
 	--altaccent-color: #419fc9;
+	--altbackgroundcolor: #437e9b;
 	--text-color: #f6f0cd;
 	--secondarybg-color: #143852;
 }
@@ -30,7 +32,11 @@ h2 {
 	font-size: 4em;
 }
 
-#appLink, #submitButton, .more {
+.buttons > button {
+	display: inline;
+}
+
+.appLink, #submitButton, .more {
 	background-color: var(--altaccent-color);
 	color: var(--text-color);
 	font-size: 3em;
@@ -42,7 +48,7 @@ h2 {
 	box-shadow: var(--accent-color);
 }
 
-#appLink:hover, #submitButton:hover, .more:hover {
+.appLink:hover, #submitButton:hover, .more:hover {
 	transition-duration: 0.2s;
 	background-color: var(--accent-color);
 	color: var(--main-bg-color);
@@ -50,7 +56,7 @@ h2 {
 	cursor: pointer;
 }
 
-#appLink:active, #submitButton:active, .more:active {
+.appLink:active, #submitButton:active, .more:active {
 	background-color: var(--text-color);
 	transition-duration: 0.1s;
 	cursor: pointer;
@@ -124,7 +130,6 @@ li a:hover {
 	transform: rotate(15deg);
 }
 
-
 .hoverGraphic {
 	font-size: 8em;
 	color: var(--header-color);
@@ -149,11 +154,8 @@ p {
 	margin: 0 auto;
 }
 
-h2 {
-	margin-top: 30px;
-}
-
 .subtitle {
+	margin-top: 30px;
 	color: var(--header-color);
 }
 
@@ -167,9 +169,9 @@ h2 {
 }
 
 .post {
-	padding: 2rem;
+	padding: 1rem;
 	margin: .5rem;
-	width: 30%;
+	width: 40%;
 	overflow-x: hidden;
 	background-color: var(--altaccent-color);
 	border-radius: 10px;
@@ -181,16 +183,22 @@ h2 {
 
 .post:hover {
 	background-color: var(--accent-color);
-	padding: 2.2rem;
+	padding: 1.2rem;
 	transition-duration: 0.2s;
 }
 
 .post > h2 {
-	font-size: 3rem;
+	font-size: 2rem;
+	margin-bottom: 5px;
+}
+
+.post > p {
+	width: 70%;
 }
 
 .galleryImg {
 	width: 80%;
+	border-radius: 10px;
 }
 
 /* Form Styling */
@@ -261,6 +269,25 @@ footer {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+}
+
+/* Footer Styling */
+
+#footerLink {
+	position:absolute;
+  	top: 50%;
+  	transform:translateY(-50%);
+	right: 15px;
+	height:100%;
+}
+
+#footerLink > img{
+	height: 100%;
+	width: auto;
+}
+
+#jumpLink {
+	width: 10%;
 }
 
 /* Desktop Only */
