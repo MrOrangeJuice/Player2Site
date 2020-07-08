@@ -5,7 +5,7 @@
 	--darkaccent-color: #b52d1f;
 	--altaccent-color: #419fc9;
 	--altbackgroundcolor: #437e9b;
-	--text-color: #f6f0cd;
+	--text-color: #ffffff;
 	--secondarybg-color: #143852;
 }
 
@@ -13,6 +13,7 @@
 	max-width: 1140px;
 	width: 100%;
 	margin: auto;
+	padding-bottom: 100px;
 }
 
 body {
@@ -30,10 +31,20 @@ h1 {
 h2 {
 	color: var(--header-color);
 	font-size: 4em;
+	width: 70%;
+	margin-left: 15%;
 }
 
-.buttons > button {
-	display: inline;
+p {
+	font-size: 1.25em;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.buttons > label {
+	padding: 0px;
+	margin: 0px;
+	font-size: 3em;
 }
 
 .appLink, #submitButton, .more {
@@ -41,6 +52,7 @@ h2 {
 	color: var(--text-color);
 	font-size: 3em;
 	margin: 15px;
+	margin-bottom: 0px;
 	padding: 10px;
 	border-radius: 10px;
 	border: 0px;
@@ -103,32 +115,61 @@ li a:hover {
 	font-size: 16em;
 	padding-left: 3%;
 	padding-right: 3%;
+	transition-duration: 0.2s;
+	color: var(--accent-color);
+}
+
+#monitor:hover {
+	transform: rotate(5deg);
+	transition-duration: 0.2s;
 }
 
 #phone {
-	font-size: 4em;
+	font-size: 8em;
+	transition-duration: 0.2s;
+	color: var(--accent-color);
 }
 
 #phone:hover {
-	transform: rotate(15deg);
+	transform: rotate(-5deg);
+	transition-duration: 0.2s;
 }
 
-#tablet {
-	padding-left: 3%;
-	padding-right: 3%;
+#controller {
+	font-size: 6em;
+	transition-duration: 0.2s;
+	color: var(--accent-color)
 }
 
-#tablet:hover {
-	transform: rotate(15deg);
+#controller:hover {
+	transform: rotate(-5deg);
+	transition-duration: 0.2s;
 }
 
-#laptop {
-	font-size: 12em;
+#people {
+	font-size: 8em;
+	transition-duration: 0.2s;
+	color: var(--accent-color);
+	padding: 50px 20px 0px 20px;
 }
 
-#laptop:hover {
-	transform: rotate(15deg);
+#people:hover {
+	transform: rotate(5deg);
+	transition-duration: 0.2s;
 }
+
+#call {
+	font-size: 8em;
+	transition-duration: 0.2s;
+	color: var(--accent-color);
+	padding: 50px 20px 0px 20px;
+}
+
+#call:hover {
+	transform: rotate(-5deg);
+	transition-duration: 0.2s;
+}
+
 
 .hoverGraphic {
 	font-size: 8em;
@@ -148,10 +189,11 @@ li a:hover {
 	display: inline;
 }
 
-p {
-	padding: 2rem;
+.post > p {
+	padding: 1rem;
 	width: 50%;
 	margin: 0 auto;
+	font-size: 1.5em;
 }
 
 .subtitle {
@@ -194,6 +236,8 @@ p {
 
 .post > p {
 	width: 70%;
+	padding: 0.5rem;
+	font-size: 1.25em;
 }
 
 .galleryImg {
