@@ -3,7 +3,9 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Player 2</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/8f3dcde252.js" crossorigin="anonymous"></script>
@@ -12,112 +14,52 @@
 
 </head>
 
-<body>
-	<div class="page">
-		<!--
+<body id="body">
+	<div class="parallax-window" data-parallax="scroll" data-image-src="media/P2Square.png">
+		<div class="page">
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="app.html">Player 2</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="press.html">PRESS</a></li>
 			</ul>
-			<hr>
 		</nav>
-		-->
-		<main>
-			<img src="media/logo.jpeg" alt="Logo" width=80% height=80%>
-			<h2 class="subtitle">Find anyone to play with, anytime.</h2>
-			<p>Player 2 is a gaming focused social network and team building platform. Whether a player
-				needs
-				teammates to complete an immediate activity, wants to make new friends to play games with, or would like
-				to
-				join a gaming community, Player 2 is designed to be the foremost networking app and website for
-				players across PC, console, and mobile platforms.</p>
-			<div class="buttons">
-				<!--
-				<form action="app.html">
-					<button class="appLink">Check It Out</button>
-				</form>
-				<label>or</label>
-			-->
-				<h3>Coming This Fall</h3>
-				<form action="https://mailchi.mp/8290b199e31b/dynasty-11-mailing-list-signup">
-					<button class="appLink" style="margin: 5px 15px 15px 15px">Signup for the Beta</button>
-				</form>
-			</div>
-			<!--
-			<hr>
-			<h2>Latest Posts</h2>
-			<div id="postGallery">
-				<div class="post">
-					<img src="media/luigi_disco.jpg" class="galleryImg" alt="Thumbnail">
-					<h2>Title 1</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore
-						et dolore magna aliqua... <br><a href="#">See More</a></p>
+			<main>
+				<img src="media/p2logotrans.png" alt="Logo" class="logo">
+				<br>
+				<br>
+				<br>
+				<div id="blurb">
+					<h1 class="subtitle">Meet new teammates, build your community, and share the joy of games!</h1>
+					<p>Click the button below to
+						become a Player 1, and get early access to the app, future updates, exclusive perks like the
+						Player 1
+						profile flair, and the chance to help design the perfect gaming companion app!</p>
+					<br>
+					<form action="https://mailchi.mp/8290b199e31b/dynasty-11-mailing-list-signup">
+						<button class="appLink" style="margin: 5px 15px 15px 15px">Become a Player 1</button>
+					</form>
 				</div>
-				<div class="post">
-					<img src="media/luigi_disco.jpg" class="galleryImg" alt="Thumbnail">
-					<h2>Title 2</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore
-						et dolore magna aliqua... <br><a href="#">See More</a></p>
+				<div id="scene">
+					<div data-depth="0.1">
+					</div>
 				</div>
-				<div class="post">
-					<img src="media/luigi_disco.jpg" class="galleryImg" alt="Thumbnail">
-					<h2>Title 3</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore
-						et dolore magna aliqua... <br><a href="#">See More</a></p>
-				</div>
-				<div class="post">
-					<img src="media/luigi_disco.jpg" class="galleryImg" alt="Thumbnail">
-					<h2>Title 4</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore
-						et dolore magna aliqua... <br><a href="#">See More</a></p>
-				</div>
-				<div class="post">
-					<img src="media/luigi_disco.jpg" class="galleryImg" alt="Thumbnail">
-					<h2>Title 5</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore
-						et dolore magna aliqua... <br><a href="#">See More</a></p>
-				</div>
-				<div class="post">
-					<img src="media/luigi_disco.jpg" class="galleryImg" alt="Thumbnail">
-					<h2>Title 6</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore
-						et dolore magna aliqua... <br><a href="#">See More</a></p>
-				</div>
-				<div class="post">
-					<img src="media/luigi_disco.jpg" class="galleryImg" alt="Thumbnail">
-					<h2>Title 7</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore
-						et dolore magna aliqua... <br><a href="#">See More</a></p>
-				</div>
-				<div class="post">
-					<img src="media/luigi_disco.jpg" class="galleryImg" alt="Thumbnail">
-					<h2>Title 8</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore
-						et dolore magna aliqua... <br><a href="#">See More</a></p>
-				</div>
-				<form action="#">
-					<button class="more">Load More</button>
-				</form>
-			</div>
-		-->
-		</main>
+			</main>
+		</div>
 	</div>
 
 	<footer>
-		<small>&copy; Dynasty 11 Studios 2020</small>
-		<a href="http://dynasty11.com/" id="footerLink"><img src="media/logo_trans.png" alt="Dynasty 11 Logo" id="footerLogo"></a>
+		<small>&copy; Dynasty 11 Studios 2021</small>
+		<a href="http://dynasty11.com/" id="footerLink">Return to Dynasty11.com</a>
 	</footer>
+
+	<script>
+		const el = document.querySelector("#body");
+
+		el.addEventListener("mousemove", (e) => {
+  		el.style.backgroundPositionX = -(e.offsetX) + "px";
+  		el.style.backgroundPositionY = -(e.offsetY)+ "px";
+});
+	</script>
 </body>
 
 </html>

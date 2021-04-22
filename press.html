@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Player 2</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/8f3dcde252.js" crossorigin="anonymous"></script>
+	<link rel="icon" type="image/png" href="media/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="media/favicon-16x16.png" sizes="16x16" />
+
+</head>
+
+<body id="body">
+	<div class="parallax-window" data-parallax="scroll" data-image-src="media/P2Square.png">
+		<div class="page">
+			<nav>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="press.html">PRESS</a></li>
+				</ul>
+			</nav>
+			<main>
+				<div>
+					<div class="pressGallery">
+						<img src="media/Presskit/Binder2-1.png" alt="Presskit">
+						<img src="media/Presskit/Binder2-2.png" alt="Presskit">
+						<img src="media/Presskit/Binder2-3.png" alt="Presskit">
+						<img src="media/Presskit/Binder2-4.png" alt="Presskit">
+						<img src="media/Presskit/Binder2-5.png" alt="Presskit">
+						<img src="media/Presskit/Binder2-6.png" alt="Presskit">
+						<img src="media/Presskit/Binder2-7.png" alt="Presskit">
+						<img src="media/Presskit/Binder2-8.png" alt="Presskit">
+						<img src="media/Presskit/Binder2-9.png" alt="Presskit">
+						<img src="media/Presskit/Binder2-10.png" alt="Presskit">
+						<img src="media/Presskit/Binder2-11.png" alt="Presskit">
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+
+	<footer>
+		<small>&copy; Dynasty 11 Studios 2021</small>
+		<a href="http://dynasty11.com/" id="footerLink">Return to Dynasty11.com</a>
+	</footer>
+
+	<script>
+		const el = document.querySelector("#body");
+
+		el.addEventListener("mousemove", (e) => {
+  		el.style.backgroundPositionX = -(e.offsetX) + "px";
+  		el.style.backgroundPositionY = -(e.offsetY)+ "px";
+});
+	</script>
+</body>
+
+</html>
